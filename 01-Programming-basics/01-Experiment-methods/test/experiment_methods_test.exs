@@ -74,7 +74,7 @@ defmodule ExperimentMethodsTest do
 
   describe "#ascending_order" do
     test "should return the array in alphabetical order" do
-      list = alphabet_list() |> Enum.shuffle
+      list = alphabet_list() |> Enum.shuffle()
       received = ascending_order(list)
       assert received == Enum.sort(list)
     end
@@ -82,7 +82,7 @@ defmodule ExperimentMethodsTest do
 
   defp alphabet_list() do
     ?a..?z
-    |> Enum.to_list
+    |> Enum.to_list()
   end
 
   defp random_subset_example() do
